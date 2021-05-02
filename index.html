@@ -3,13 +3,14 @@
         <title>Welcome to my Portfolio</title>
         <link rel="stylesheet" href="./styles/style.css"/>
         <link rel="stylesheet" href="./styles/experience.css"/>
+        <link rel="stylesheet" href="./styles/readme.css"/>
         <link rel="stylesheet" href="./styles/formatting.css"/>
         <link rel="icon" href="assets/icon.png"/>
     </head>
 <body>
     <div class="webpage-wrapper">
         <div class="header">
-            <span id="window-file">home.html</span> - Porfolio - Visual Studio Code
+            <span id="window-file">readme.md</span> - Porfolio - Visual Studio Code
         </div>
         <div class="menu-bar">
             <span class="menu-bar-item">File</span>
@@ -39,6 +40,12 @@
                     <span class="sidebar-menu-item">
                         <i class="normal"></i>Portfolio
                     </span>
+                    <span id="readme" class="sidebar-menu-item active-sidebar-menu-item">        
+                        <a onclick="navigate('readme', readme_data)" class="sidebar-button pdf-file">
+                            <img src="assets/html.png" width=14 />
+                            readme.md
+                        </a>
+                    </span>
                     <span id="resume" class="sidebar-menu-item">        
                         <a href="/assets/documents/SumitBadsara-Resume.pdf" class="sidebar-button pdf-file">
                             <img src="assets/pdf.png" width=14 />
@@ -47,7 +54,7 @@
                     </span>
                     <span id="about" class="sidebar-menu-item">
                         <a onclick="navigate('about', about_data)" class="sidebar-button json-file">
-                            <img src="assets/html.png" width=14 />
+                            <img src="assets/js.png" width=14 />
                             about_me.json
                         </a>
                     </span> 
@@ -58,8 +65,8 @@
                         </a>
                     </span>
                     <span id="project" class="sidebar-menu-item">
-                        <a onclick="navigate('project', projects)" class="sidebar-button json-file">
-                            <img src="assets/css.png" width=14 />
+                        <a onclick="navigate('project', project_data)" class="sidebar-button json-file">
+                            <img src="assets/js.png" width=14 />
                             projects.json
                         </a>
                     </span>
@@ -68,7 +75,7 @@
             </div>
             <div class="main-section">
                 <div class="tab-section">
-                    <span id="tab-file" class="active-tab">home.html</span>
+                    <span id="tab-file" class="active-tab">readme.md</span>
                     <span class="tab untracked"><i>python-developer.py U</i></span>
                     <span class="tab modified">cpp-coder.cpp M</span>
                     <span class="tab">django-developer/manage.py</span>
@@ -89,5 +96,9 @@
     <script type="text/javascript" src="data/experiences.js"></script> 
     <script type="text/javascript" src="data/projects.js"></script> 
     <script type="text/javascript" src="data/about.js"></script> 
+    <script type="text/javascript" src="data/readme.js"></script> 
+    <script>
+        window.onload = navigate('readme', readme_data);
+    </script>
 </body>
 </html>

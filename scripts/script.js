@@ -1,10 +1,12 @@
-function download_resume()
+function load_readme()
 {
+    document.getElementById("code-editor").innerHTML = `${readme_data}`;
     
 }
 
 function switchPage(page_id)
 {
+    document.getElementById("readme").classList.remove("active-sidebar-menu-item");
     document.getElementById("resume").classList.remove("active-sidebar-menu-item");
     document.getElementById("about").classList.remove("active-sidebar-menu-item");
     document.getElementById("experience").classList.remove("active-sidebar-menu-item");
@@ -12,22 +14,25 @@ function switchPage(page_id)
 
     document.getElementById(page_id).classList.add("active-sidebar-menu-item")
 
-    if(page_id!="resume")
+    if(page_id!="readme")
     {
         document.getElementById("window-file").innerHTML = page_id+".json";
         document.getElementById("tab-file").innerHTML = page_id+".json";
     }
     else
     {
-        document.getElementById("window-file").innerHTML = page_id+".pdf";
-        document.getElementById("tab-file").innerHTML = page_id+".pdf";  
+        document.getElementById("window-file").innerHTML = page_id+".md";
+        document.getElementById("tab-file").innerHTML = page_id+".md";  
     }
 }
 
 function navigate(page_id, data) 
 {
     switchPage(page_id);
-    populate_data(data);
+    if(page_id=="readme")
+        load_readme(data)
+    else
+        populate_data(data);
 }
 
 function populate_data(data)

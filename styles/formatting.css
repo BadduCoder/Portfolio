@@ -41,3 +41,14 @@
 .modified {
   color: rgb(221, 187, 76);
 }
+
+.highlight {
+  background-color: rgba(238, 216, 157, 0.623);
+  padding: 0.1em;
+}
+
+.underline {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: red;
+}

@@ -3,8 +3,29 @@
   border: none;
   overflow-y: scroll;
   height: 80vh;
-  width: 150vh;
+  width: 145vh;
   background-color: transparent;
   color: white;
   white-space: pre;
+}
+
+.intext-button {
+  text-decoration: none;
+  color: rgb(86, 156, 235);
+}
+
+.intext-button:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(86, 156, 235);
+}
+
+.intext-button:visited {
+  text-decoration: none;
+  color: rgb(86, 156, 235);
+}
+
+.intext-button:active {
+  text-decoration: none;
+  color: rgb(86, 156, 235);
 }
