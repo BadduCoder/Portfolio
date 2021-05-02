@@ -1,0 +1,6 @@
+.readme-content-wrapper {
+  padding: 2em;
+  line-height: 1.6;
+  overflow-y: scroll;
+  height: 80vh;
+}

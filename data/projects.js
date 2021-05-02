@@ -1,4 +1,4 @@
-const projects = [
+const project_data = [
     {
         "Project Title" : "CoviSafe-India",
         "Project Type" : "Individual Contibution",
