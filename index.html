@@ -1,5 +1,90 @@
 <html>
+    <head>
+        <title>Welcome to my Portfolio</title>
+        <link rel="stylesheet" href="./styles/style.css"/>
+        <link rel="icon" href="assets/icon.png"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    </head>
 <body>
-Coming Soon
+    <div class="webpage-wrapper">
+        <div class="header">
+            <span id="window-file">home.html</span> - Porfolio - Visual Studio Code
+        </div>
+        <div class="menu-bar">
+            <span class="menu-bar-item">File</span>
+            <span class="menu-bar-item">Edit</span>
+            <span class="menu-bar-item">Selection</span>
+            <span class="menu-bar-item">View</span>
+            <span class="menu-bar-item">Go</span>
+            <span class="menu-bar-item">Run</span>
+            <span class="menu-bar-item">Terminal</span>
+            <span class="menu-b =>ar-item">Help</span>
+        </div>
+        
+        <div class="homepage-wrapper">
+            <div class="sidebar-icon-wrapper">
+                <span class="sidebar-icon"><img src="/assets/search.png" height="25px"></span>
+                <span class="sidebar-icon"><img src="/assets/git.png" height="25px"></span>
+                <span class="sidebar-icon"><img src="/assets/debug.png" height="25px"></span>
+                <span class="sidebar-icon"><img src="/assets/remote.png" height="25px"></span>
+                <span class="sidebar-icon"><img src="/assets/docker.png" height="25px"></span>
+            </div>
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    EXPLORER
+                </div>
+                <br>
+                <div class="sidebar-menu-wrapper">
+                    <span class="sidebar-menu-item">
+                        Portfolio
+                    </span>
+                    <span id="resume" class="sidebar-menu-item">        
+                        <a onclick="alertuser('resume', experience_data)" class="sidebar-button">
+                            <img src="assets/pdf.png" width=14 />
+                            Resume
+                        </a>
+                    </span>
+                    <span id="about" class="sidebar-menu-item">
+                        <a onclick="alertuser('about', experience_data)" class="sidebar-button">
+                            <img src="assets/html.png" width=14 />
+                            About me
+                        </a>
+                    </span> 
+                    <span id="experience" class="sidebar-menu-item">
+                        <a onclick="alertuser('experience', experience_data)" class="sidebar-button">
+                            <img src="assets/js.png" width=14 />
+                            Experiences
+                        </a>
+                    </span>
+                    <span id="project" class="sidebar-menu-item">
+                        <a onclick="alertuser('project', experience_data)" class="sidebar-button">
+                            <img src="assets/css.png" width=14 />
+                            Projects
+                        </a>
+                    </span>
+
+                </div>
+            </div>
+            <div class="main-section">
+                <div class="tab-section">
+                    <span id="tab-file" class="active-tab">home.html</span>
+                    <span class="tab">python-developer.py</span>
+                    <span class="tab">cpp-coder.cpp</span>
+                    <span class="tab">django-developer/manage.py</span>
+                </div>
+                <div class="code-section">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                master*
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/script.js" ></script>
+    <script type="text/javascript" src="data/experiences.js"></script> 
 </body>
 </html>

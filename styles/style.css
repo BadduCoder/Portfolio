@@ -1,0 +1,145 @@
+body {
+  background-color: #2d333b !important;
+  color: white !important;
+  font-family: monaco, COnsolas, "Lucida Console", monospace !important;
+  font-size: 14px;
+  margin: 0;
+}
+
+.webpage-wrapper {
+  margin: 0;
+}
+
+.homepage-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 92vh;
+}
+
+.header {
+  text-align: center;
+  margin-top: 0.7%;
+  margin-bottom: 0.7%;
+}
+
+/*Menubar design*/
+
+.menu-bar {
+  background-color: white;
+  color: black;
+  padding-top: 0.2%;
+  padding-bottom: 0.2%;
+}
+
+.menu-bar-item {
+  padding-left: 1%;
+  cursor: not-allowed !important;
+}
+
+.footer {
+  background-color: blue;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-content {
+  padding: 0.2%;
+}
+
+/*SideBar designs*/
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding-top: 0.5%;
+  padding-left: 1%;
+}
+
+.sidebar-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-menu-item {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 2em;
+}
+
+.sidebar-menu-item:hover {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #3b3f46;
+}
+
+.active-sidebar-menu-item {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #3b3f46;
+}
+
+.sidebar-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #3b3f48;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.sidebar-icon {
+  margin-top: 2em;
+  cursor: not-allowed !important;
+}
+
+.sidebar-button {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar-button:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: white !important;
+}
+
+.sidebar-button:visited {
+  text-decoration: none;
+  color: white !important;
+}
+
+.sidebar-button:active {
+  text-decoration: none;
+  color: white !important;
+}
+
+/* Main Section design*/
+
+.main-section {
+  background-color: #1e2228;
+  width: 100%;
+  margin: 0;
+}
+
+.tab-section {
+  display: flex;
+  background-color: #181616;
+  border: solid #181818;
+  border-width: 0 0 1 0;
+}
+
+.tab {
+  padding: 0.8%;
+  margin-left: 0.1%;
+  background-color: #1e2228;
+}
+
+.tab:hover {
+  cursor: not-allowed !important;
+}
+
+.active-tab {
+  padding: 0.8%;
+  background-color: #27292c;
+}
