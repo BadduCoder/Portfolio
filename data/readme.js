@@ -9,9 +9,9 @@ This is still in development phase, I plan to add some more advanced features to
 
 Let me tell you something about me :
 <br>
-1. I am by profession a <span class="highlight">backend developer</span>.<br>
+1. I am a <span class="highlight">backend developer</span> by profession.<br>
 2. I can still work on frontend (react) or android (react-native).<br>
-3. I am a <span class="underline">fresher</span> as I will be graduating in 2021.
+3. I am a <span class="underline">fresher</span> as I will be graduating in 2021 from NIT Raipur.
 
 <br><br><br>
 You can find all my relevant experiences by <a class="intext-button" onclick="navigate('experience', experience_data)"> clicking here </a>.
@@ -42,10 +42,8 @@ etc...<br>
 
 <br><br>
 
-I also like gaming, anyone wants to invite me for a multiplayer match ping me ;).<br>
+I also like gaming, anyone who would like to invite me for a multiplayer match, I am in ;).<br>
 Other than that, I can hop on for a casual <span class="highlight">basketball</span> match.
-
-
 
 </div>
 `;
