@@ -1,0 +1,10 @@
+.section-wrapper {
+  margin: 2em;
+  border: none;
+  overflow-y: scroll;
+  height: 80vh;
+  width: 150vh;
+  background-color: transparent;
+  color: white;
+  white-space: pre;
+}
