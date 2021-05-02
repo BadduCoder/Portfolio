@@ -94,10 +94,6 @@ body {
   cursor: not-allowed !important;
 }
 
-.vscode-sidebar-img {
-  max-height: 30px;
-}
-
 .sidebar-button {
   text-decoration: none;
   color: white;
