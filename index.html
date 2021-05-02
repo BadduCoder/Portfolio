@@ -2,8 +2,11 @@
     <head>
         <title>Welcome to my Portfolio</title>
         <link rel="stylesheet" href="./styles/style.css"/>
+        <link rel="stylesheet" href="./styles/experience.css"/>
+        <link rel="stylesheet" href="./styles/formatting.css"/>
         <link rel="icon" href="assets/icon.png"/>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     </head>
 <body>
     <div class="webpage-wrapper">
@@ -23,11 +26,11 @@
         
         <div class="homepage-wrapper">
             <div class="sidebar-icon-wrapper">
-                <span class="sidebar-icon"><img src="/assets/search.png" height="25px"></span>
-                <span class="sidebar-icon"><img src="/assets/git.png" height="25px"></span>
-                <span class="sidebar-icon"><img src="/assets/debug.png" height="25px"></span>
-                <span class="sidebar-icon"><img src="/assets/remote.png" height="25px"></span>
-                <span class="sidebar-icon"><img src="/assets/docker.png" height="25px"></span>
+                <span class="vscode-sidebar-icon"><img class="vscode-sidebar-img" src="/assets/search.png"></span>
+                <span class="vscode-sidebar-icon"><img class="vscode-sidebar-img" src="/assets/git.png"></span>
+                <span class="vscode-sidebar-icon"><img class="vscode-sidebar-img" src="/assets/debug.png"></span>
+                <span class="vscode-sidebar-icon"><img class="vscode-sidebar-img" src="/assets/remote.png"></span>
+                <span class="vscode-sidebar-icon"><img class="vscode-sidebar-img" src="/assets/docker.png"></span>
             </div>
             <div class="sidebar">
                 <div class="sidebar-header">
@@ -36,30 +39,30 @@
                 <br>
                 <div class="sidebar-menu-wrapper">
                     <span class="sidebar-menu-item">
-                        Portfolio
+                        <i class="normal"></i>Portfolio
                     </span>
                     <span id="resume" class="sidebar-menu-item">        
-                        <a onclick="alertuser('resume', experience_data)" class="sidebar-button">
+                        <a href="/assets/documents/SumitBadsara-Resume.pdf" class="sidebar-button pdf-file">
                             <img src="assets/pdf.png" width=14 />
-                            Resume
+                            resume.pdf
                         </a>
                     </span>
                     <span id="about" class="sidebar-menu-item">
-                        <a onclick="alertuser('about', experience_data)" class="sidebar-button">
+                        <a onclick="navigate('about', about_data)" class="sidebar-button json-file">
                             <img src="assets/html.png" width=14 />
-                            About me
+                            about_me.json
                         </a>
                     </span> 
                     <span id="experience" class="sidebar-menu-item">
-                        <a onclick="alertuser('experience', experience_data)" class="sidebar-button">
+                        <a onclick="navigate('experience', experience_data)" class="sidebar-button json-file">
                             <img src="assets/js.png" width=14 />
-                            Experiences
+                            experiences.json
                         </a>
                     </span>
                     <span id="project" class="sidebar-menu-item">
-                        <a onclick="alertuser('project', experience_data)" class="sidebar-button">
+                        <a onclick="navigate('project', projects)" class="sidebar-button json-file">
                             <img src="assets/css.png" width=14 />
-                            Projects
+                            projects.json
                         </a>
                     </span>
 
@@ -68,11 +71,11 @@
             <div class="main-section">
                 <div class="tab-section">
                     <span id="tab-file" class="active-tab">home.html</span>
-                    <span class="tab">python-developer.py</span>
-                    <span class="tab">cpp-coder.cpp</span>
+                    <span class="tab untracked"><i>python-developer.py U</i></span>
+                    <span class="tab modified">cpp-coder.cpp M</span>
                     <span class="tab">django-developer/manage.py</span>
                 </div>
-                <div class="code-section">
+                <div id="code-editor" class="code-section">
                     
                 </div>
             </div>
@@ -86,5 +89,7 @@
     </div>
     <script type="text/javascript" src="scripts/script.js" ></script>
     <script type="text/javascript" src="data/experiences.js"></script> 
+    <script type="text/javascript" src="data/projects.js"></script> 
+    <script type="text/javascript" src="data/about.js"></script> 
 </body>
 </html>

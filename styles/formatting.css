@@ -1,0 +1,43 @@
+.string {
+  color: rgb(175, 143, 122);
+}
+.number {
+  color: rgb(177, 226, 183);
+}
+.boolean {
+  color: rgb(40, 124, 233);
+}
+.null {
+  color: rgb(228, 126, 228);
+}
+.key {
+  color: rgb(148, 219, 236);
+}
+
+.python-file {
+  color: rgb(171, 138, 233);
+}
+
+.cpp-file {
+  color: rgb(102, 216, 236);
+}
+
+.html-file {
+  color: white;
+}
+
+.json-file {
+  color: rgb(238, 216, 143);
+}
+
+.pdf-file {
+  color: rgb(186, 238, 143);
+}
+
+.untracked {
+  color: rgb(76, 163, 76);
+}
+
+.modified {
+  color: rgb(221, 187, 76);
+}
