@@ -7,7 +7,7 @@ const experience_data = [
         "Description" : [
             "Integrated bank APIs to reduce human efforts and automate recon process.",
             "Worked on major features such as stories, new contextual card, new reward type.",
-            "Worked as Point Of Contact from technical team for customer success team and resolved queries/bugs."
+            `Worked as Point Of Contact from technical team for customer success team and resolved queries/bugs.`
         ]
     },
     {

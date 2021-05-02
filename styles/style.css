@@ -7,14 +7,24 @@ body {
   line-height: 1.6;
 }
 
+@media screen and (max-width: 1280px) {
+  body {
+    font-size: 12px;
+  }
+}
+
 .webpage-wrapper {
   margin: 0;
+}
+
+#code-editor {
+  max-width: 150vh;
 }
 
 .homepage-wrapper {
   display: flex;
   flex-direction: row;
-  height: 92vh;
+  height: 88vh;
 }
 
 .header {
@@ -42,11 +52,11 @@ body {
   background-color: blue;
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: 0vh;
 }
 
 .footer-content {
-  padding: 0.2%;
+  padding: 0.5vh;
 }
 
 /*SideBar designs*/

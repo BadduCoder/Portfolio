@@ -1,11 +1,8 @@
 .section-wrapper {
-  margin: 2em;
-  border: none;
+  padding: 2em;
   overflow-y: scroll;
-  height: 80vh;
-  width: 145vh;
-  background-color: transparent;
-  color: white;
+  overflow-x: scroll;
+  height: 77vh;
   white-space: pre;
 }
 
